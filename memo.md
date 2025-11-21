@@ -1,0 +1,1 @@
+shadowoftherock is a initiative to make a bible that can be used in all desktop OS.
