@@ -1,7 +1,8 @@
 const {
     app,
     BrowserWindow,
-    ipcMain
+    ipcMain, 
+    Menu
 } = require('electron');
 const path = require('path');
 const xlsx = require('xlsx');
@@ -15,6 +16,10 @@ function createWindow() {
             preload: path.join(__dirname, 'preload.js')
         }
     });
+    
+    // Hide default menu
+    Menu.setApplicationMenu(null);
+
     win.loadFile('index.html');
 }
 

@@ -2,7 +2,7 @@ body {
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     background: #f6f8fb;
     color: #111;
-      margin: 20px;
+    margin: 20px;
 }
 
 .container {
@@ -19,11 +19,6 @@ h1 {
     font-size: 20px;
 }
 
-.controls {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 12px;
-}
 
 input {
     flex: 1;
@@ -43,14 +38,6 @@ button {
     cursor: pointer;
 }
 
-/* .result {
-    min-height: 80px;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px dashed #ddd;
-    background: #fbfdff;
-} */
-
 .note {
     margin-top: 8px;
     color: #555;
@@ -65,12 +52,27 @@ code {
 
 
 
-
-#result {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
+#controls {
+    position: sticky;
+    bottom: 0;
+    background: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
 }
 
 
-#result { padding: 20px; overflow: auto; height: calc(100% - 70px); box-sizing: border-box; }
+
+#result {
+    font-size: 400%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    height: calc(100% - 70px);
+
+    width: 100%;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
