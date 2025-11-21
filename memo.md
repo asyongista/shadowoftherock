@@ -1,1 +1,3 @@
-shadowoftherock is a initiative to make a bible that can be used in all desktop OS.
+shadowoftherock is a initiative to make a desktop bible.
+    - can be install in all desktop OS
+    - friendly to use
